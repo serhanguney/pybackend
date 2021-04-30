@@ -15,8 +15,8 @@ module.exports = class Email {
     return nodemailer.createTransport({
       service: "gmail",
       auth: {
-        user: "dummy.yuivae@gmail.com",
-        pass: "dummy1991",
+        user: "privateyachtingturkey@gmail.com",
+        pass: "1.Pycharter",
       },
     });
   }
@@ -28,7 +28,7 @@ module.exports = class Email {
     // });
     const mailOptions = {
       from: this.from,
-      to: "dummy.yuivae@gmail.com",
+      to: "privateyachtingturkey@gmail.com",
       subject: `${this.boat} Inquiry from ${this.firstName} ${this.lastName}`,
       text: this.message,
     };
