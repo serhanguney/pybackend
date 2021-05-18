@@ -9,8 +9,7 @@ app.use(express.json());
 app.post("/contact", async (req, res) => {
   try {
     const email = new Email({
-      firstName: req.body.firstName,
-      lastName: req.body.lastName,
+      fullName: req.body.fullName,
       from: req.body.from,
       message: req.body.message,
       boat: req.body.boat,
